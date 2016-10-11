@@ -1,0 +1,5 @@
+github "emaloney/CleanroomASL" "1.5.0"
+github "ReSwift/ReSwift" "2.1.0"
+github "antitypical/Result" "3.0.0"
+github "Thomvis/BrightFutures" "v5.0.1"
+github "emaloney/CleanroomLogger" "2.2.0"
