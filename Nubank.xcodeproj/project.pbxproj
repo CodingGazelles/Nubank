@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF8AAD051DAD6E1D000C336C /* NUActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C461DAD5A84007E7509 /* NUActions.swift */; };
+		DF8AAD061DAD6E22000C336C /* NUApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */; };
+		DF8AAD071DAD6E26000C336C /* NUReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C481DAD5A84007E7509 /* NUReducer.swift */; };
+		DF8AAD091DAD6E2A000C336C /* NUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C511DAD5D5B007E7509 /* NUApi.swift */; };
+		DF8AAD0B1DAD79D7000C336C /* EndPointLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */; };
+		DF8AAD111DAD9295000C336C /* NUApplicationStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */; };
+		DF8AAD1A1DAD9995000C336C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */; };
+		DF8AAD1B1DAD9995000C336C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8AAD181DAD9995000C336C /* Main.storyboard */; };
+		DF8AAD1C1DAD9995000C336C /* NUNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */; };
+		DF8AAD221DADA0F3000C336C /* NUErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */; };
+		DF8AAD231DADA0F3000C336C /* NUHypermediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */; };
+		DF8AAD241DADA0F3000C336C /* NUModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD211DADA0F3000C336C /* NUModel.swift */; };
+		DFC84BF51DAD27C0007E7509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */; };
+		DFC84BFC1DAD27C1007E7509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */; };
+		DFC84C0A1DAD27C3007E7509 /* NubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C091DAD27C3007E7509 /* NubankTests.swift */; };
+		DFC84C151DAD27C4007E7509 /* NubankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C141DAD27C4007E7509 /* NubankUITests.swift */; };
+		DFC84C311DAD401A007E7509 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = DFC84C2F1DAD401A007E7509 /* Cartfile */; };
+		DFC84C321DAD401A007E7509 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = DFC84C301DAD401A007E7509 /* Cartfile.resolved */; };
+		DFC84C341DAD440D007E7509 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C331DAD440D007E7509 /* BrightFutures.framework */; };
+		DFC84C351DAD440D007E7509 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C331DAD440D007E7509 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC84C3E1DAD4422007E7509 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C3D1DAD4422007E7509 /* Result.framework */; };
+		DFC84C3F1DAD4422007E7509 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C3D1DAD4422007E7509 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC84C411DAD4427007E7509 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C401DAD4427007E7509 /* ReSwift.framework */; };
+		DFC84C421DAD4427007E7509 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C401DAD4427007E7509 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC84C451DAD5A67007E7509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C441DAD5A67007E7509 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFC84C061DAD27C3007E7509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC84BE91DAD27BA007E7509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFC84BF01DAD27BB007E7509;
+			remoteInfo = Nubank;
+		};
+		DFC84C111DAD27C3007E7509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC84BE91DAD27BA007E7509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFC84BF01DAD27BB007E7509;
+			remoteInfo = Nubank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFC84C361DAD440D007E7509 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFC84C351DAD440D007E7509 /* BrightFutures.framework in Embed Frameworks */,
+				DFC84C421DAD4427007E7509 /* ReSwift.framework in Embed Frameworks */,
+				DFC84C3F1DAD4422007E7509 /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointLinkTests.swift; sourceTree = "<group>"; };
+		DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApplicationStateStore.swift; path = AppState/NUApplicationStateStore.swift; sourceTree = "<group>"; };
+		DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UI/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF8AAD181DAD9995000C336C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
+		DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUNoticeViewController.swift; path = UI/NUNoticeViewController.swift; sourceTree = "<group>"; };
+		DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUErrors.swift; path = Model/NUErrors.swift; sourceTree = "<group>"; };
+		DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUHypermediaModel.swift; path = Model/NUHypermediaModel.swift; sourceTree = "<group>"; };
+		DF8AAD211DADA0F3000C336C /* NUModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUModel.swift; path = Model/NUModel.swift; sourceTree = "<group>"; };
+		DFC84BF11DAD27C0007E7509 /* Nubank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nubank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFC84C001DAD27C1007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC84C051DAD27C3007E7509 /* NubankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC84C091DAD27C3007E7509 /* NubankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NubankTests.swift; sourceTree = "<group>"; };
+		DFC84C0B1DAD27C3007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC84C101DAD27C3007E7509 /* NubankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC84C141DAD27C4007E7509 /* NubankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NubankUITests.swift; sourceTree = "<group>"; };
+		DFC84C161DAD27C4007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC84C2F1DAD401A007E7509 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		DFC84C301DAD401A007E7509 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		DFC84C331DAD440D007E7509 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		DFC84C3D1DAD4422007E7509 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DFC84C401DAD4427007E7509 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		DFC84C441DAD5A67007E7509 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UI/ViewController.swift; sourceTree = "<group>"; };
+		DFC84C461DAD5A84007E7509 /* NUActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUActions.swift; path = AppState/NUActions.swift; sourceTree = "<group>"; };
+		DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApplicationState.swift; path = AppState/NUApplicationState.swift; sourceTree = "<group>"; };
+		DFC84C481DAD5A84007E7509 /* NUReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUReducer.swift; path = AppState/NUReducer.swift; sourceTree = "<group>"; };
+		DFC84C511DAD5D5B007E7509 /* NUApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApi.swift; path = APIStack/NUApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFC84BEE1DAD27BB007E7509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC84C341DAD440D007E7509 /* BrightFutures.framework in Frameworks */,
+				DFC84C411DAD4427007E7509 /* ReSwift.framework in Frameworks */,
+				DFC84C3E1DAD4422007E7509 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C021DAD27C3007E7509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C0D1DAD27C3007E7509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF8AAD121DAD98CC000C336C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */,
+				DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */,
+				DF8AAD211DADA0F3000C336C /* NUModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DFC84BE81DAD27BA007E7509 = {
+			isa = PBXGroup;
+			children = (
+				DFC84C431DAD444D007E7509 /* Frameworks */,
+				DFC84C2F1DAD401A007E7509 /* Cartfile */,
+				DFC84C301DAD401A007E7509 /* Cartfile.resolved */,
+				DFC84BF31DAD27C0007E7509 /* Nubank */,
+				DFC84C081DAD27C3007E7509 /* NubankTests */,
+				DFC84C131DAD27C3007E7509 /* NubankUITests */,
+				DFC84BF21DAD27C0007E7509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFC84BF21DAD27C0007E7509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84BF11DAD27C0007E7509 /* Nubank.app */,
+				DFC84C051DAD27C3007E7509 /* NubankTests.xctest */,
+				DFC84C101DAD27C3007E7509 /* NubankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFC84BF31DAD27C0007E7509 /* Nubank */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C221DAD2952007E7509 /* UI */,
+				DFC84C231DAD295A007E7509 /* AppState */,
+				DFC84C241DAD2967007E7509 /* APIStack */,
+				DF8AAD121DAD98CC000C336C /* Model */,
+				DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */,
+				DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */,
+				DFC84C001DAD27C1007E7509 /* Info.plist */,
+			);
+			path = Nubank;
+			sourceTree = "<group>";
+		};
+		DFC84C081DAD27C3007E7509 /* NubankTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C091DAD27C3007E7509 /* NubankTests.swift */,
+				DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */,
+				DFC84C0B1DAD27C3007E7509 /* Info.plist */,
+			);
+			path = NubankTests;
+			sourceTree = "<group>";
+		};
+		DFC84C131DAD27C3007E7509 /* NubankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C141DAD27C4007E7509 /* NubankUITests.swift */,
+				DFC84C161DAD27C4007E7509 /* Info.plist */,
+			);
+			path = NubankUITests;
+			sourceTree = "<group>";
+		};
+		DFC84C221DAD2952007E7509 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */,
+				DF8AAD181DAD9995000C336C /* Main.storyboard */,
+				DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */,
+				DFC84C441DAD5A67007E7509 /* ViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DFC84C231DAD295A007E7509 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C461DAD5A84007E7509 /* NUActions.swift */,
+				DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */,
+				DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */,
+				DFC84C481DAD5A84007E7509 /* NUReducer.swift */,
+			);
+			name = AppState;
+			sourceTree = "<group>";
+		};
+		DFC84C241DAD2967007E7509 /* APIStack */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C511DAD5D5B007E7509 /* NUApi.swift */,
+			);
+			name = APIStack;
+			sourceTree = "<group>";
+		};
+		DFC84C431DAD444D007E7509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFC84C401DAD4427007E7509 /* ReSwift.framework */,
+				DFC84C3D1DAD4422007E7509 /* Result.framework */,
+				DFC84C331DAD440D007E7509 /* BrightFutures.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFC84BF01DAD27BB007E7509 /* Nubank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC84C191DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "Nubank" */;
+			buildPhases = (
+				DFC84BED1DAD27BB007E7509 /* Sources */,
+				DFC84BEE1DAD27BB007E7509 /* Frameworks */,
+				DFC84BEF1DAD27BB007E7509 /* Resources */,
+				DFC84C361DAD440D007E7509 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nubank;
+			productName = Nubank;
+			productReference = DFC84BF11DAD27C0007E7509 /* Nubank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFC84C041DAD27C3007E7509 /* NubankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC84C1C1DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "NubankTests" */;
+			buildPhases = (
+				DFC84C011DAD27C3007E7509 /* Sources */,
+				DFC84C021DAD27C3007E7509 /* Frameworks */,
+				DFC84C031DAD27C3007E7509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFC84C071DAD27C3007E7509 /* PBXTargetDependency */,
+			);
+			name = NubankTests;
+			productName = NubankTests;
+			productReference = DFC84C051DAD27C3007E7509 /* NubankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFC84C0F1DAD27C3007E7509 /* NubankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC84C1F1DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "NubankUITests" */;
+			buildPhases = (
+				DFC84C0C1DAD27C3007E7509 /* Sources */,
+				DFC84C0D1DAD27C3007E7509 /* Frameworks */,
+				DFC84C0E1DAD27C3007E7509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFC84C121DAD27C3007E7509 /* PBXTargetDependency */,
+			);
+			name = NubankUITests;
+			productName = NubankUITests;
+			productReference = DFC84C101DAD27C3007E7509 /* NubankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFC84BE91DAD27BA007E7509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MadeWithMojito;
+				TargetAttributes = {
+					DFC84BF01DAD27BB007E7509 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 983743F6WJ;
+						ProvisioningStyle = Automatic;
+					};
+					DFC84C041DAD27C3007E7509 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFC84BF01DAD27BB007E7509;
+					};
+					DFC84C0F1DAD27C3007E7509 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFC84BF01DAD27BB007E7509;
+					};
+				};
+			};
+			buildConfigurationList = DFC84BEC1DAD27BA007E7509 /* Build configuration list for PBXProject "Nubank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFC84BE81DAD27BA007E7509;
+			productRefGroup = DFC84BF21DAD27C0007E7509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFC84BF01DAD27BB007E7509 /* Nubank */,
+				DFC84C041DAD27C3007E7509 /* NubankTests */,
+				DFC84C0F1DAD27C3007E7509 /* NubankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFC84BEF1DAD27BB007E7509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8AAD1B1DAD9995000C336C /* Main.storyboard in Resources */,
+				DFC84BFC1DAD27C1007E7509 /* Assets.xcassets in Resources */,
+				DFC84C311DAD401A007E7509 /* Cartfile in Resources */,
+				DF8AAD1A1DAD9995000C336C /* LaunchScreen.storyboard in Resources */,
+				DFC84C321DAD401A007E7509 /* Cartfile.resolved in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C031DAD27C3007E7509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C0E1DAD27C3007E7509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFC84BED1DAD27BB007E7509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC84C451DAD5A67007E7509 /* ViewController.swift in Sources */,
+				DF8AAD1C1DAD9995000C336C /* NUNoticeViewController.swift in Sources */,
+				DF8AAD071DAD6E26000C336C /* NUReducer.swift in Sources */,
+				DF8AAD051DAD6E1D000C336C /* NUActions.swift in Sources */,
+				DF8AAD091DAD6E2A000C336C /* NUApi.swift in Sources */,
+				DF8AAD061DAD6E22000C336C /* NUApplicationState.swift in Sources */,
+				DF8AAD221DADA0F3000C336C /* NUErrors.swift in Sources */,
+				DFC84BF51DAD27C0007E7509 /* AppDelegate.swift in Sources */,
+				DF8AAD111DAD9295000C336C /* NUApplicationStateStore.swift in Sources */,
+				DF8AAD241DADA0F3000C336C /* NUModel.swift in Sources */,
+				DF8AAD231DADA0F3000C336C /* NUHypermediaModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C011DAD27C3007E7509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8AAD0B1DAD79D7000C336C /* EndPointLinkTests.swift in Sources */,
+				DFC84C0A1DAD27C3007E7509 /* NubankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC84C0C1DAD27C3007E7509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC84C151DAD27C4007E7509 /* NubankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFC84C071DAD27C3007E7509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFC84BF01DAD27BB007E7509 /* Nubank */;
+			targetProxy = DFC84C061DAD27C3007E7509 /* PBXContainerItemProxy */;
+		};
+		DFC84C121DAD27C3007E7509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFC84BF01DAD27BB007E7509 /* Nubank */;
+			targetProxy = DFC84C111DAD27C3007E7509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFC84C171DAD27C4007E7509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFC84C181DAD27C4007E7509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFC84C1A1DAD27C4007E7509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 983743F6WJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Nubank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.Nubank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DFC84C1B1DAD27C4007E7509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 983743F6WJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Nubank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.Nubank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DFC84C1D1DAD27C4007E7509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NubankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nubank.app/Nubank";
+			};
+			name = Debug;
+		};
+		DFC84C1E1DAD27C4007E7509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NubankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nubank.app/Nubank";
+			};
+			name = Release;
+		};
+		DFC84C201DAD27C4007E7509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NubankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Nubank;
+			};
+			name = Debug;
+		};
+		DFC84C211DAD27C4007E7509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NubankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Nubank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFC84BEC1DAD27BA007E7509 /* Build configuration list for PBXProject "Nubank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC84C171DAD27C4007E7509 /* Debug */,
+				DFC84C181DAD27C4007E7509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC84C191DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "Nubank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC84C1A1DAD27C4007E7509 /* Debug */,
+				DFC84C1B1DAD27C4007E7509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC84C1C1DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "NubankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC84C1D1DAD27C4007E7509 /* Debug */,
+				DFC84C1E1DAD27C4007E7509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC84C1F1DAD27C4007E7509 /* Build configuration list for PBXNativeTarget "NubankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC84C201DAD27C4007E7509 /* Debug */,
+				DFC84C211DAD27C4007E7509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFC84BE91DAD27BA007E7509 /* Project object */;
+}
