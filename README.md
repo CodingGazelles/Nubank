@@ -23,7 +23,7 @@ Instead of dealing with asynchronous operations through closures and callback, p
 Simply speaking a Future is a 'proxy' object for a result/object that is at the moment
 initially unknown, usually because the computation of its value is yet incomplete.
 
-This Pattern facilitates the writing of functional code and data pipelining (See below).
+This Pattern facilitates the writing of functional code and data pipelining ([See below](#framework--dependencies)).
 
 
 #### Unidirectional Data Flow with [ReSwift](https://github.com/ReSwift/ReSwift)
