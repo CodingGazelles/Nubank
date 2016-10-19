@@ -24,12 +24,15 @@ import BrightFutures
  and returns a NUAPIResponseFuture
  
  */
+protocol NUHALLinkProtocol: Loggable {}
 
 
 
 
-
-class NULink: Loggable {
+/*
+ Base implementation
+ */
+class NULink: NUHALLinkProtocol {
     
     
     
@@ -52,13 +55,13 @@ class NULink: Loggable {
      Calls the API pointed at by the Link and validates the StatusCode and the ContentType of the HTTP Response
      Call is asynchronous and returns a Future that encapsulates the response content or an Error
      */
-    func callAPI() -> Future<NUAPIResponse, NUResourceError> {
+    func callAPI() -> Future<NUHTTPResponse, NUResourceError> {
         log.info( "Calling API of \(self.href)")
         
         
         
         // Prepare the Future
-        let future = Future<NUAPIResponse, NUResourceError>{ complete in
+        let future = Future<NUHTTPResponse, NUResourceError>{ complete in
             DispatchQueue.global().async {
                 
                 
@@ -88,7 +91,7 @@ class NULink: Loggable {
                             
                             
                             // Building the APIResponse
-                            let response = NUAPIResponse(
+                            let response = NUHTTPResponse(
                                 request: response.request,
                                 response: response.response,
                                 data: response.data,
@@ -137,7 +140,7 @@ class NULink: Loggable {
 /*
  Functional implementation
  */
-func callAPI( _ link: NULink) -> Future<NUAPIResponse, NUResourceError> {
+func callAPI( _ link: NULink) -> Future<NUHTTPResponse, NUResourceError> {
     return link.callAPI()
 }
 

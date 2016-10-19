@@ -29,7 +29,7 @@ typealias JsonDictionary = Dictionary<String, AnyObject>
 
 /*
  */
-class NUJsonParser<R: NUResourceProtocol> {
+class NUJsonParser<R: NUHALResourceProtocol> {
     
     // Store the json
     let data: Any

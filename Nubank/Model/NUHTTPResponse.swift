@@ -63,13 +63,14 @@ class NUHTTPResponse: NUHTTPResponseProtocol {
 
 
 /*
- Converts a Future of a NUAPIResponse into a Future of a NUResource
+ Futurization of NUHALResourceProtocol
  */
 extension Future where T: NUHTTPResponseProtocol, E: NUResourceError {
     
     
     
     /*
+     Converts a Future of a NUAPIResponse into a Future of a NUResource
      Parses the content of the HTTP Response and returns the result in a Resource Future
      */
     func getResource< U: NUHALResourceProtocol>() -> Future< U, Value.Error> {

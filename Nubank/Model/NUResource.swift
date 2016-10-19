@@ -19,7 +19,7 @@ import BrightFutures
  
  */
 
-protocol NUResourceProtocol: Loggable {}
+protocol NUHALResourceProtocol: Loggable {}
 
 
 
@@ -27,7 +27,7 @@ protocol NUResourceProtocol: Loggable {}
 /*
  Base implementation
  */
-class NUResource: NUResourceProtocol {}
+class NUResource: NUHALResourceProtocol {}
 
 
 
@@ -43,11 +43,15 @@ protocol NUResourceCanUpdateStateProtocol {
 
 
 /*
- Converts a Future of a NUResource into a Future of a NUAction
+ Futurization of NUHALResourceProtocol
  */
-extension Future where T: NUResourceProtocol, E: NUResourceError {
+extension Future where T: NUHALResourceProtocol, E: NUResourceError {
 
 
+    
+    /*
+     Converts a Future of a NUResource into a Future of a NUAction
+    */
     func getUpdateStateAction() -> Future< NUUpdateStateAction, Value.Error> {
         log.info( "Getting Update Action of \(self.value)")
         

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DF091A031DAE75EA002E58F2 /* NUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF091A021DAE75EA002E58F2 /* NUAPI.swift */; };
 		DF18728B1DB5451500B4A13B /* NUResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD211DADA0F3000C336C /* NUResource.swift */; };
-		DF1872901DB545E200B4A13B /* NUAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */; };
+		DF1872901DB545E200B4A13B /* NUHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728D1DB545E200B4A13B /* NUHTTPResponse.swift */; };
 		DF1872911DB545E200B4A13B /* NUFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728E1DB545E200B4A13B /* NUFutures.swift */; };
 		DF1872921DB545E200B4A13B /* NULink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728F1DB545E200B4A13B /* NULink.swift */; };
 		DF1872961DB56A5000B4A13B /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1872951DB56A5000B4A13B /* Alamofire.framework.dSYM */; };
@@ -108,7 +108,7 @@
 
 /* Begin PBXFileReference section */
 		DF091A021DAE75EA002E58F2 /* NUAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUAPI.swift; path = APIStack/NUAPI.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUAPIResponse.swift; path = Model/NUAPIResponse.swift; sourceTree = "<group>"; };
+		DF18728D1DB545E200B4A13B /* NUHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUHTTPResponse.swift; path = Model/NUHTTPResponse.swift; sourceTree = "<group>"; };
 		DF18728E1DB545E200B4A13B /* NUFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUFutures.swift; path = Model/NUFutures.swift; sourceTree = "<group>"; };
 		DF18728F1DB545E200B4A13B /* NULink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NULink.swift; path = Model/NULink.swift; sourceTree = "<group>"; };
 		DF1872951DB56A5000B4A13B /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				DF18728F1DB545E200B4A13B /* NULink.swift */,
-				DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */,
+				DF18728D1DB545E200B4A13B /* NUHTTPResponse.swift */,
 				DF8AAD211DADA0F3000C336C /* NUResource.swift */,
 				DFC84C461DAD5A84007E7509 /* NUActions.swift */,
 				DF8AAD121DAD98CC000C336C /* Implementation */,
@@ -519,7 +519,7 @@
 				DF18728B1DB5451500B4A13B /* NUResource.swift in Sources */,
 				DFC84BF51DAD27C0007E7509 /* AppDelegate.swift in Sources */,
 				DF1872911DB545E200B4A13B /* NUFutures.swift in Sources */,
-				DF1872901DB545E200B4A13B /* NUAPIResponse.swift in Sources */,
+				DF1872901DB545E200B4A13B /* NUHTTPResponse.swift in Sources */,
 				DF6042501DB079B90047C146 /* NUParsers.swift in Sources */,
 				DF8AAD111DAD9295000C336C /* NUStore.swift in Sources */,
 			);

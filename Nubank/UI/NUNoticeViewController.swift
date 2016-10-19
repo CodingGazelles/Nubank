@@ -30,26 +30,27 @@ class NUNoticeViewController: UIViewController {
         NSLog("NUNoticeViewController did load")
         
         
+        
         // Launch data loading of data in Application State
-        let entryPointFuture: Future<NUUpdateStateAction, NUResourceError> = NUAPIStack.defaultStack().entryPointLink
-            |> callAPI
-            |> getResource
-            |> getUpdateStateAction
+        let dispatchFuture: Future<Any, NUResourceError> =
+            NUAPIStack.defaultStack().entryPointLink
+                |> callAPI
+                |> getResource
+                |> getUpdateStateAction
+                |> dispatchAction
         
         
-        entryPointFuture
-            .onSuccess { resource in
-                    
-            }
-            .onFailure { error in
-                    
-            }
         
+        //
+        dispatchFuture
+            .onSuccess {}
+            .onFailure {}
         
         
         
         // Update UI
         updateUI()
+        
         
     }
     

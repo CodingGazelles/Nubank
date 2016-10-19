@@ -1,14 +1,15 @@
 Nubank
 ======
 
-
 ## Architecture of the Project
 ### Hypertext Application Language
 
 The project uses its own implementation of Hypertext Application Language standard.
 
 - `protocol NUHALLinkProtocol {}` :  A Link to a Resource
+
 - `protocol NUHTTPResponseProtocol {}` : The HTTP Response returned when calling a Link. Useful for dealing with HTTP Response/Request errors, Json parsing and Resource instantiation.
+
 - `protocol NUHALResourceProtocol {}` : A Resource
 
 The project uses sub-classes of the aforementioned protocols to describe the properties of all links and resources the project will use.
@@ -23,23 +24,30 @@ Instead of dealing with asynchronous operations through closures and callback, p
 Simply speaking a Future is a 'proxy' object for a result/object that is at the moment
 initially unknown, usually because the computation of its value is yet incomplete.
 
-This Pattern facilitates the writing of functional code and data pipelining ([See below](#framework--dependencies)).
+This Pattern facilitates the writing of functional code and data pipelining. [See below data pipeline](https://github.com/t4ncr3d3/Nubank#forward-pipe-operator--data-pipelines).
 
+#### [Unidirectional Data Flow](http://redux.js.org/docs/basics/DataFlow.html)
 
-#### Unidirectional Data Flow with [ReSwift](https://github.com/ReSwift/ReSwift)
+The project uses [ReSwift](https://github.com/ReSwift/ReSwift) to implement the [Unidirectional Data Flow](http://redux.js.org/docs/basics/DataFlow.html) pattern. This pattern has been popularized by the [Redux](http://redux.js.org/) framework.
 
-The project uses ReSwift to implement the [Unidirectional Data Flow](http://redux.js.org/docs/basics/DataFlow.html) pattern. This pattern has been popularized by the [Redux](http://redux.js.org/) framework.
+> All data in an application follows the same lifecycle pattern, making the logic of your app more predictable and easier to understand. It also encourages data normalization, so that you don't end up with multiple, independent copies of the same data that are unaware of one another.
 
-> This means that all data in an application follows the same lifecycle pattern, making the logic of your app more predictable and easier to understand. It also encourages data normalization, so that you don't end up with multiple, independent copies of the same data that are unaware of one another.
+> (http://redux.js.org/docs/basics/DataFlow.html)
 
 4 objects are used to implement this pattern:
 
-- **`class NUStore {}`** : The Store stores your entire app state in the form of a single data structure
-- **`  class NUAction: Action {}`** : Actions are objects used to declare a state change.
-- **`class NUReducer: Reducer {}`** : Reducers provide pure functions, that based on the current action and the current app state, create a new app state.
-- **`struct NUApplicationState: StateType {}`** : The application state is the structure that stores the application state.
+- `class NUStore {}` : The Store stores your entire app state in the form of a single data structure
+
+- `class NUAction: Action {}` : Actions are objects used to declare a state change.
+
+- `class NUReducer: Reducer {}` : Reducers provide pure functions, that based on the current action and the current app state, create a new app state.
+
+- `struct NUApplicationState: StateType {}` : The application state is the structure that stores the application state.
 
 #### Forward Pipe Operator & Data Pipelines
+
+
+**To be continued**
 
   The result of each step becomes the argument of the next step.
 
@@ -53,26 +61,24 @@ The project uses ReSwift to implement the [Unidirectional Data Flow](http://redu
                   |> getUpdateStateAction
   ```
 
+**To be continued**
 
-### Framework & Dependencies
-The project uses the following dependencies.
+**To be continued**
 
-- **[antitypical/Result](https://github.com/antitypical/Result)** : Type modelling the success/failure of arbitrary operations
-- **[DaveWoodCom/XCGLogger](https://github.com/DaveWoodCom/XCGLogger)** : Logging
-- **[ReSwift/ReSwift](https://github.com/ReSwift/ReSwift)** : Unidirectional Data Flow
-- **[Thomvis/BrightFutures](https://github.com/Thomvis/BrightFutures)** : Asynchronous code using futures and promises
-- **[Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)** : HTTP Networking
-- **[IBM-Swift/Pipes](https://github.com/IBM-Swift/Pipes)** : Forward pipe operator
+**To be continued**
 
-All frameworks are imported through Carthage except :
-- **[IBM-Swift/Pipes](https://github.com/IBM-Swift/Pipes)**     =>  Imported directly into the source code of the project. It's a one file framework. ;-)
 ## Installation
-
 ### GitHub
+
 1. Open Terminal
+
 2. Change the current working directory to the location where you want the cloned directory to be made.
+
 3. Execute the following command to [clone](https://help.github.com/articles/cloning-a-repository/) the [Nubank](https://github.com/t4ncr3d3/Nubank) repository on your local drive.
-  ```git clone git@github.com:t4ncr3d3/Nubank.git```
+  ```
+  git clone git@github.com:t4ncr3d3/Nubank.git
+  ```
+
 ### [Carthage](https://github.com/Carthage/Carthage)
 
 1. Install [Carthage](https://github.com/Carthage/Carthage#installing-carthage).
@@ -86,3 +92,23 @@ All frameworks are imported through Carthage except :
   ```
 
 4. On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop all the frameworks found inside the [Carthage/Build](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagebuild) folder on disk.
+
+### Framework & Dependencies
+
+The project uses the following dependencies:
+
+- **[antitypical/Result](https://github.com/antitypical/Result)** : Type modeling the success/failure of arbitrary operations
+
+- **[DaveWoodCom/XCGLogger](https://github.com/DaveWoodCom/XCGLogger)** : Logging
+
+- **[ReSwift/ReSwift](https://github.com/ReSwift/ReSwift)** : Unidirectional Data Flow
+
+- **[Thomvis/BrightFutures](https://github.com/Thomvis/BrightFutures)** : Asynchronous code using futures and promises
+
+- **[Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)** : HTTP Networking
+
+- **[IBM-Swift/Pipes](https://github.com/IBM-Swift/Pipes)** : Forward pipe operator
+
+All frameworks are imported through Carthage except :
+
+- **[IBM-Swift/Pipes](https://github.com/IBM-Swift/Pipes)**     =>  Imported directly into the source code of the project. It's a one file framework. ;-)
