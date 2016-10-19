@@ -7,31 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF091A031DAE75EA002E58F2 /* NUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF091A021DAE75EA002E58F2 /* NUAPI.swift */; };
+		DF18728B1DB5451500B4A13B /* NUResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD211DADA0F3000C336C /* NUResource.swift */; };
+		DF1872901DB545E200B4A13B /* NUAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */; };
+		DF1872911DB545E200B4A13B /* NUFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728E1DB545E200B4A13B /* NUFutures.swift */; };
+		DF1872921DB545E200B4A13B /* NULink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18728F1DB545E200B4A13B /* NULink.swift */; };
+		DF1872961DB56A5000B4A13B /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1872951DB56A5000B4A13B /* Alamofire.framework.dSYM */; };
+		DF1872981DB56A5A00B4A13B /* BrightFutures.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1872971DB56A5A00B4A13B /* BrightFutures.framework.dSYM */; };
+		DF18729A1DB56A6000B4A13B /* ReSwift.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1872991DB56A6000B4A13B /* ReSwift.framework.dSYM */; };
+		DF18729D1DB56A6D00B4A13B /* XCGLogger.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF18729C1DB56A6D00B4A13B /* XCGLogger.framework.dSYM */; };
+		DF18729F1DB56D9600B4A13B /* Result.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF18729E1DB56D9600B4A13B /* Result.framework.dSYM */; };
+		DF1872BD1DB6EB2F00B4A13B /* NUPipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1872BC1DB6EB2F00B4A13B /* NUPipes.swift */; };
+		DF1BC0DD1DAF0B52007CEF1B /* Carthage in Resources */ = {isa = PBXBuildFile; fileRef = DF1BC0DC1DAF0B52007CEF1B /* Carthage */; };
+		DF6042501DB079B90047C146 /* NUParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60424F1DB079B90047C146 /* NUParsers.swift */; };
+		DF6042661DB177DD0047C146 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042621DB177DD0047C146 /* Alamofire.framework */; };
+		DF6042671DB177DD0047C146 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042631DB177DD0047C146 /* BrightFutures.framework */; };
+		DF6042681DB177DD0047C146 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042641DB177DD0047C146 /* Result.framework */; };
+		DF6042691DB177DD0047C146 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042651DB177DD0047C146 /* ReSwift.framework */; };
+		DF60426E1DB177E90047C146 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426A1DB177E90047C146 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF60426F1DB177E90047C146 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426B1DB177E90047C146 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6042701DB177E90047C146 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426C1DB177E90047C146 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6042711DB177E90047C146 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426D1DB177E90047C146 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6042721DB178060047C146 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426A1DB177E90047C146 /* Alamofire.framework */; };
+		DF6042731DB178060047C146 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426B1DB177E90047C146 /* BrightFutures.framework */; };
+		DF6042741DB178060047C146 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426C1DB177E90047C146 /* Result.framework */; };
+		DF6042751DB178060047C146 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60426D1DB177E90047C146 /* ReSwift.framework */; };
+		DF60427A1DB1780B0047C146 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = DF6042761DB1780B0047C146 /* Alamofire.framework */; };
+		DF60427B1DB1780B0047C146 /* BrightFutures.framework in Resources */ = {isa = PBXBuildFile; fileRef = DF6042771DB1780B0047C146 /* BrightFutures.framework */; };
+		DF60427C1DB1780B0047C146 /* Result.framework in Resources */ = {isa = PBXBuildFile; fileRef = DF6042781DB1780B0047C146 /* Result.framework */; };
+		DF60427D1DB1780B0047C146 /* ReSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = DF6042791DB1780B0047C146 /* ReSwift.framework */; };
+		DF6042801DB17A670047C146 /* NULogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF60427F1DB17A670047C146 /* NULogs.swift */; };
+		DF6042821DB18A920047C146 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042811DB18A920047C146 /* XCGLogger.framework */; };
+		DF6042841DB18A980047C146 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042831DB18A980047C146 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6042861DB18A9F0047C146 /* XCGLogger.framework in Resources */ = {isa = PBXBuildFile; fileRef = DF6042851DB18A9F0047C146 /* XCGLogger.framework */; };
+		DF6042871DB18AA10047C146 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6042851DB18A9F0047C146 /* XCGLogger.framework */; };
 		DF8AAD051DAD6E1D000C336C /* NUActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C461DAD5A84007E7509 /* NUActions.swift */; };
-		DF8AAD061DAD6E22000C336C /* NUApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */; };
+		DF8AAD061DAD6E22000C336C /* NUState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C471DAD5A84007E7509 /* NUState.swift */; };
 		DF8AAD071DAD6E26000C336C /* NUReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C481DAD5A84007E7509 /* NUReducer.swift */; };
-		DF8AAD091DAD6E2A000C336C /* NUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C511DAD5D5B007E7509 /* NUApi.swift */; };
 		DF8AAD0B1DAD79D7000C336C /* EndPointLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */; };
-		DF8AAD111DAD9295000C336C /* NUApplicationStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */; };
+		DF8AAD111DAD9295000C336C /* NUStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD101DAD9295000C336C /* NUStore.swift */; };
 		DF8AAD1A1DAD9995000C336C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */; };
 		DF8AAD1B1DAD9995000C336C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8AAD181DAD9995000C336C /* Main.storyboard */; };
 		DF8AAD1C1DAD9995000C336C /* NUNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */; };
 		DF8AAD221DADA0F3000C336C /* NUErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */; };
-		DF8AAD231DADA0F3000C336C /* NUHypermediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */; };
-		DF8AAD241DADA0F3000C336C /* NUModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AAD211DADA0F3000C336C /* NUModel.swift */; };
 		DFC84BF51DAD27C0007E7509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */; };
 		DFC84BFC1DAD27C1007E7509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */; };
-		DFC84C0A1DAD27C3007E7509 /* NubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C091DAD27C3007E7509 /* NubankTests.swift */; };
 		DFC84C151DAD27C4007E7509 /* NubankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C141DAD27C4007E7509 /* NubankUITests.swift */; };
 		DFC84C311DAD401A007E7509 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = DFC84C2F1DAD401A007E7509 /* Cartfile */; };
 		DFC84C321DAD401A007E7509 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = DFC84C301DAD401A007E7509 /* Cartfile.resolved */; };
-		DFC84C341DAD440D007E7509 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C331DAD440D007E7509 /* BrightFutures.framework */; };
-		DFC84C351DAD440D007E7509 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C331DAD440D007E7509 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DFC84C3E1DAD4422007E7509 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C3D1DAD4422007E7509 /* Result.framework */; };
-		DFC84C3F1DAD4422007E7509 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C3D1DAD4422007E7509 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DFC84C411DAD4427007E7509 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C401DAD4427007E7509 /* ReSwift.framework */; };
-		DFC84C421DAD4427007E7509 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFC84C401DAD4427007E7509 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DFC84C451DAD5A67007E7509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC84C441DAD5A67007E7509 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +75,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DF1872941DB56A2D00B4A13B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				DF1872981DB56A5A00B4A13B /* BrightFutures.framework.dSYM in CopyFiles */,
+				DF18729D1DB56A6D00B4A13B /* XCGLogger.framework.dSYM in CopyFiles */,
+				DF18729F1DB56D9600B4A13B /* Result.framework.dSYM in CopyFiles */,
+				DF1872961DB56A5000B4A13B /* Alamofire.framework.dSYM in CopyFiles */,
+				DF18729A1DB56A6000B4A13B /* ReSwift.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC84C361DAD440D007E7509 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DFC84C351DAD440D007E7509 /* BrightFutures.framework in Embed Frameworks */,
-				DFC84C421DAD4427007E7509 /* ReSwift.framework in Embed Frameworks */,
-				DFC84C3F1DAD4422007E7509 /* Result.framework in Embed Frameworks */,
+				DF60426E1DB177E90047C146 /* Alamofire.framework in Embed Frameworks */,
+				DF60426F1DB177E90047C146 /* BrightFutures.framework in Embed Frameworks */,
+				DF6042841DB18A980047C146 /* XCGLogger.framework in Embed Frameworks */,
+				DF6042701DB177E90047C146 /* Result.framework in Embed Frameworks */,
+				DF6042711DB177E90047C146 /* ReSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,34 +107,57 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointLinkTests.swift; sourceTree = "<group>"; };
-		DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApplicationStateStore.swift; path = AppState/NUApplicationStateStore.swift; sourceTree = "<group>"; };
+		DF091A021DAE75EA002E58F2 /* NUAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUAPI.swift; path = APIStack/NUAPI.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUAPIResponse.swift; path = Model/NUAPIResponse.swift; sourceTree = "<group>"; };
+		DF18728E1DB545E200B4A13B /* NUFutures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUFutures.swift; path = Model/NUFutures.swift; sourceTree = "<group>"; };
+		DF18728F1DB545E200B4A13B /* NULink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NULink.swift; path = Model/NULink.swift; sourceTree = "<group>"; };
+		DF1872951DB56A5000B4A13B /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		DF1872971DB56A5A00B4A13B /* BrightFutures.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = BrightFutures.framework.dSYM; path = Carthage/Build/iOS/BrightFutures.framework.dSYM; sourceTree = "<group>"; };
+		DF1872991DB56A6000B4A13B /* ReSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReSwift.framework.dSYM; path = Carthage/Build/iOS/ReSwift.framework.dSYM; sourceTree = "<group>"; };
+		DF18729B1DB56A6900B4A13B /* ReSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReSwift.framework.dSYM; path = Carthage/Build/iOS/ReSwift.framework.dSYM; sourceTree = "<group>"; };
+		DF18729C1DB56A6D00B4A13B /* XCGLogger.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = XCGLogger.framework.dSYM; path = Carthage/Build/iOS/XCGLogger.framework.dSYM; sourceTree = "<group>"; };
+		DF18729E1DB56D9600B4A13B /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		DF1872BC1DB6EB2F00B4A13B /* NUPipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUPipes.swift; sourceTree = "<group>"; };
+		DF1BC0DC1DAF0B52007CEF1B /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		DF60424D1DB053C60047C146 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF60424F1DB079B90047C146 /* NUParsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUParsers.swift; path = Model/NUParsers.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF6042621DB177DD0047C146 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DF6042631DB177DD0047C146 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		DF6042641DB177DD0047C146 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DF6042651DB177DD0047C146 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		DF60426A1DB177E90047C146 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DF60426B1DB177E90047C146 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		DF60426C1DB177E90047C146 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DF60426D1DB177E90047C146 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		DF6042761DB1780B0047C146 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DF6042771DB1780B0047C146 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		DF6042781DB1780B0047C146 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DF6042791DB1780B0047C146 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		DF60427F1DB17A670047C146 /* NULogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = NULogs.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF6042811DB18A920047C146 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		DF6042831DB18A980047C146 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		DF6042851DB18A9F0047C146 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EndPointLinkTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF8AAD101DAD9295000C336C /* NUStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUStore.swift; path = AppState/NUStore.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UI/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF8AAD181DAD9995000C336C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
-		DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUNoticeViewController.swift; path = UI/NUNoticeViewController.swift; sourceTree = "<group>"; };
-		DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUErrors.swift; path = Model/NUErrors.swift; sourceTree = "<group>"; };
-		DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUHypermediaModel.swift; path = Model/NUHypermediaModel.swift; sourceTree = "<group>"; };
-		DF8AAD211DADA0F3000C336C /* NUModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUModel.swift; path = Model/NUModel.swift; sourceTree = "<group>"; };
+		DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUNoticeViewController.swift; path = UI/NUNoticeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUErrors.swift; path = Model/NUErrors.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DF8AAD211DADA0F3000C336C /* NUResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUResource.swift; path = Model/NUResource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DFC84BF11DAD27C0007E7509 /* Nubank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nubank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC84C001DAD27C1007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC84C051DAD27C3007E7509 /* NubankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC84C091DAD27C3007E7509 /* NubankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NubankTests.swift; sourceTree = "<group>"; };
 		DFC84C0B1DAD27C3007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC84C101DAD27C3007E7509 /* NubankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC84C141DAD27C4007E7509 /* NubankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NubankUITests.swift; sourceTree = "<group>"; };
+		DFC84C141DAD27C4007E7509 /* NubankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = NubankUITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DFC84C161DAD27C4007E7509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC84C2F1DAD401A007E7509 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		DFC84C301DAD401A007E7509 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		DFC84C331DAD440D007E7509 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
-		DFC84C3D1DAD4422007E7509 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		DFC84C401DAD4427007E7509 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
-		DFC84C441DAD5A67007E7509 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UI/ViewController.swift; sourceTree = "<group>"; };
-		DFC84C461DAD5A84007E7509 /* NUActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUActions.swift; path = AppState/NUActions.swift; sourceTree = "<group>"; };
-		DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApplicationState.swift; path = AppState/NUApplicationState.swift; sourceTree = "<group>"; };
-		DFC84C481DAD5A84007E7509 /* NUReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUReducer.swift; path = AppState/NUReducer.swift; sourceTree = "<group>"; };
-		DFC84C511DAD5D5B007E7509 /* NUApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NUApi.swift; path = APIStack/NUApi.swift; sourceTree = "<group>"; };
+		DFC84C461DAD5A84007E7509 /* NUActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUActions.swift; path = AppState/NUActions.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DFC84C471DAD5A84007E7509 /* NUState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUState.swift; path = AppState/NUState.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DFC84C481DAD5A84007E7509 /* NUReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = NUReducer.swift; path = AppState/NUReducer.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +165,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC84C341DAD440D007E7509 /* BrightFutures.framework in Frameworks */,
-				DFC84C411DAD4427007E7509 /* ReSwift.framework in Frameworks */,
-				DFC84C3E1DAD4422007E7509 /* Result.framework in Frameworks */,
+				DF6042661DB177DD0047C146 /* Alamofire.framework in Frameworks */,
+				DF6042671DB177DD0047C146 /* BrightFutures.framework in Frameworks */,
+				DF6042821DB18A920047C146 /* XCGLogger.framework in Frameworks */,
+				DF6042681DB177DD0047C146 /* Result.framework in Frameworks */,
+				DF6042691DB177DD0047C146 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +177,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6042721DB178060047C146 /* Alamofire.framework in Frameworks */,
+				DF6042731DB178060047C146 /* BrightFutures.framework in Frameworks */,
+				DF6042871DB18AA10047C146 /* XCGLogger.framework in Frameworks */,
+				DF6042741DB178060047C146 /* Result.framework in Frameworks */,
+				DF6042751DB178060047C146 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,19 +195,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF8AAD121DAD98CC000C336C /* Model */ = {
+		DF091A041DAEDA65002E58F2 /* APIStack */ = {
 			isa = PBXGroup;
 			children = (
-				DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */,
-				DF8AAD201DADA0F3000C336C /* NUHypermediaModel.swift */,
-				DF8AAD211DADA0F3000C336C /* NUModel.swift */,
+				DF091A021DAE75EA002E58F2 /* NUAPI.swift */,
 			);
-			name = Model;
+			name = APIStack;
+			sourceTree = "<group>";
+		};
+		DF60427E1DB17A4A0047C146 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DF8AAD121DAD98CC000C336C /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				DF60427F1DB17A670047C146 /* NULogs.swift */,
+				DF18728E1DB545E200B4A13B /* NUFutures.swift */,
+				DF8AAD1F1DADA0F3000C336C /* NUErrors.swift */,
+				DF60424F1DB079B90047C146 /* NUParsers.swift */,
+				DF1872BC1DB6EB2F00B4A13B /* NUPipes.swift */,
+			);
+			name = Implementation;
 			sourceTree = "<group>";
 		};
 		DFC84BE81DAD27BA007E7509 = {
 			isa = PBXGroup;
 			children = (
+				DF60424D1DB053C60047C146 /* README.md */,
+				DF1BC0DC1DAF0B52007CEF1B /* Carthage */,
 				DFC84C431DAD444D007E7509 /* Frameworks */,
 				DFC84C2F1DAD401A007E7509 /* Cartfile */,
 				DFC84C301DAD401A007E7509 /* Cartfile.resolved */,
@@ -162,10 +250,11 @@
 		DFC84BF31DAD27C0007E7509 /* Nubank */ = {
 			isa = PBXGroup;
 			children = (
+				DF60427E1DB17A4A0047C146 /* Helpers */,
 				DFC84C221DAD2952007E7509 /* UI */,
 				DFC84C231DAD295A007E7509 /* AppState */,
-				DFC84C241DAD2967007E7509 /* APIStack */,
-				DF8AAD121DAD98CC000C336C /* Model */,
+				DFC84C241DAD2967007E7509 /* Model */,
+				DF091A041DAEDA65002E58F2 /* APIStack */,
 				DFC84BF41DAD27C0007E7509 /* AppDelegate.swift */,
 				DFC84BFB1DAD27C1007E7509 /* Assets.xcassets */,
 				DFC84C001DAD27C1007E7509 /* Info.plist */,
@@ -176,7 +265,6 @@
 		DFC84C081DAD27C3007E7509 /* NubankTests */ = {
 			isa = PBXGroup;
 			children = (
-				DFC84C091DAD27C3007E7509 /* NubankTests.swift */,
 				DF8AAD0A1DAD79D7000C336C /* EndPointLinkTests.swift */,
 				DFC84C0B1DAD27C3007E7509 /* Info.plist */,
 			);
@@ -198,7 +286,6 @@
 				DF8AAD171DAD9995000C336C /* LaunchScreen.storyboard */,
 				DF8AAD181DAD9995000C336C /* Main.storyboard */,
 				DF8AAD191DAD9995000C336C /* NUNoticeViewController.swift */,
-				DFC84C441DAD5A67007E7509 /* ViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -206,28 +293,49 @@
 		DFC84C231DAD295A007E7509 /* AppState */ = {
 			isa = PBXGroup;
 			children = (
-				DFC84C461DAD5A84007E7509 /* NUActions.swift */,
-				DFC84C471DAD5A84007E7509 /* NUApplicationState.swift */,
-				DF8AAD101DAD9295000C336C /* NUApplicationStateStore.swift */,
+				DFC84C471DAD5A84007E7509 /* NUState.swift */,
+				DF8AAD101DAD9295000C336C /* NUStore.swift */,
 				DFC84C481DAD5A84007E7509 /* NUReducer.swift */,
 			);
 			name = AppState;
 			sourceTree = "<group>";
 		};
-		DFC84C241DAD2967007E7509 /* APIStack */ = {
+		DFC84C241DAD2967007E7509 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DFC84C511DAD5D5B007E7509 /* NUApi.swift */,
+				DF18728F1DB545E200B4A13B /* NULink.swift */,
+				DF18728D1DB545E200B4A13B /* NUAPIResponse.swift */,
+				DF8AAD211DADA0F3000C336C /* NUResource.swift */,
+				DFC84C461DAD5A84007E7509 /* NUActions.swift */,
+				DF8AAD121DAD98CC000C336C /* Implementation */,
 			);
-			name = APIStack;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DFC84C431DAD444D007E7509 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFC84C401DAD4427007E7509 /* ReSwift.framework */,
-				DFC84C3D1DAD4422007E7509 /* Result.framework */,
-				DFC84C331DAD440D007E7509 /* BrightFutures.framework */,
+				DF18729E1DB56D9600B4A13B /* Result.framework.dSYM */,
+				DF18729C1DB56A6D00B4A13B /* XCGLogger.framework.dSYM */,
+				DF18729B1DB56A6900B4A13B /* ReSwift.framework.dSYM */,
+				DF1872991DB56A6000B4A13B /* ReSwift.framework.dSYM */,
+				DF1872971DB56A5A00B4A13B /* BrightFutures.framework.dSYM */,
+				DF1872951DB56A5000B4A13B /* Alamofire.framework.dSYM */,
+				DF6042851DB18A9F0047C146 /* XCGLogger.framework */,
+				DF6042831DB18A980047C146 /* XCGLogger.framework */,
+				DF6042811DB18A920047C146 /* XCGLogger.framework */,
+				DF6042761DB1780B0047C146 /* Alamofire.framework */,
+				DF6042771DB1780B0047C146 /* BrightFutures.framework */,
+				DF6042781DB1780B0047C146 /* Result.framework */,
+				DF6042791DB1780B0047C146 /* ReSwift.framework */,
+				DF60426A1DB177E90047C146 /* Alamofire.framework */,
+				DF60426B1DB177E90047C146 /* BrightFutures.framework */,
+				DF60426C1DB177E90047C146 /* Result.framework */,
+				DF60426D1DB177E90047C146 /* ReSwift.framework */,
+				DF6042621DB177DD0047C146 /* Alamofire.framework */,
+				DF6042631DB177DD0047C146 /* BrightFutures.framework */,
+				DF6042641DB177DD0047C146 /* Result.framework */,
+				DF6042651DB177DD0047C146 /* ReSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +351,8 @@
 				DFC84BEE1DAD27BB007E7509 /* Frameworks */,
 				DFC84BEF1DAD27BB007E7509 /* Resources */,
 				DFC84C361DAD440D007E7509 /* Embed Frameworks */,
+				DF1872931DB568DB00B4A13B /* ShellScript */,
+				DF1872941DB56A2D00B4A13B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -346,6 +456,7 @@
 				DFC84C311DAD401A007E7509 /* Cartfile in Resources */,
 				DF8AAD1A1DAD9995000C336C /* LaunchScreen.storyboard in Resources */,
 				DFC84C321DAD401A007E7509 /* Cartfile.resolved in Resources */,
+				DF1BC0DD1DAF0B52007CEF1B /* Carthage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +464,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF60427A1DB1780B0047C146 /* Alamofire.framework in Resources */,
+				DF60427B1DB1780B0047C146 /* BrightFutures.framework in Resources */,
+				DF6042861DB18A9F0047C146 /* XCGLogger.framework in Resources */,
+				DF60427C1DB1780B0047C146 /* Result.framework in Resources */,
+				DF60427D1DB1780B0047C146 /* ReSwift.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,22 +481,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DF1872931DB568DB00B4A13B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/XCGLogger.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFC84BED1DAD27BB007E7509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC84C451DAD5A67007E7509 /* ViewController.swift in Sources */,
 				DF8AAD1C1DAD9995000C336C /* NUNoticeViewController.swift in Sources */,
 				DF8AAD071DAD6E26000C336C /* NUReducer.swift in Sources */,
+				DF1872BD1DB6EB2F00B4A13B /* NUPipes.swift in Sources */,
+				DF1872921DB545E200B4A13B /* NULink.swift in Sources */,
 				DF8AAD051DAD6E1D000C336C /* NUActions.swift in Sources */,
-				DF8AAD091DAD6E2A000C336C /* NUApi.swift in Sources */,
-				DF8AAD061DAD6E22000C336C /* NUApplicationState.swift in Sources */,
+				DF091A031DAE75EA002E58F2 /* NUAPI.swift in Sources */,
+				DF8AAD061DAD6E22000C336C /* NUState.swift in Sources */,
+				DF6042801DB17A670047C146 /* NULogs.swift in Sources */,
 				DF8AAD221DADA0F3000C336C /* NUErrors.swift in Sources */,
+				DF18728B1DB5451500B4A13B /* NUResource.swift in Sources */,
 				DFC84BF51DAD27C0007E7509 /* AppDelegate.swift in Sources */,
-				DF8AAD111DAD9295000C336C /* NUApplicationStateStore.swift in Sources */,
-				DF8AAD241DADA0F3000C336C /* NUModel.swift in Sources */,
-				DF8AAD231DADA0F3000C336C /* NUHypermediaModel.swift in Sources */,
+				DF1872911DB545E200B4A13B /* NUFutures.swift in Sources */,
+				DF1872901DB545E200B4A13B /* NUAPIResponse.swift in Sources */,
+				DF6042501DB079B90047C146 /* NUParsers.swift in Sources */,
+				DF8AAD111DAD9295000C336C /* NUStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF8AAD0B1DAD79D7000C336C /* EndPointLinkTests.swift in Sources */,
-				DFC84C0A1DAD27C3007E7509 /* NubankTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +659,7 @@
 				);
 				INFOPLIST_FILE = Nubank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.Nubank;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.Nubank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -536,7 +676,7 @@
 				);
 				INFOPLIST_FILE = Nubank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.Nubank;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.Nubank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -547,9 +687,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NubankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.NubankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nubank.app/Nubank";
@@ -561,9 +705,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NubankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankTests;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.NubankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nubank.app/Nubank";
@@ -576,7 +724,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NubankUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.NubankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Nubank;
@@ -589,7 +737,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = NubankUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MadeWithMojito.NubankUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = MadeWithCaipirinha.NubankUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Nubank;

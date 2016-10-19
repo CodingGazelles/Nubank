@@ -1,9 +1,8 @@
 //
-//  NUActions.swift
 //  Nubank
 //
 //  Created by Tancrède on 10/11/16.
-//  Copyright © 2016 MadeWithMojito. All rights reserved.
+//  Copyright © 2016 MadeWithCaipirinha. All rights reserved.
 //
 
 import Foundation
@@ -35,13 +34,36 @@ class NUAction: Action {
 
 
 /*
+ Action that updates the Application State
+ */
+class NUUpdateStateAction: NUAction {
+}
+
+
+
+
+/*
  Updates the State with the content of the Notice Resource
  */
-class NUNoticeUpdateStateAction: NUAction {
+class NUNoticeUpdateStateAction: NUUpdateStateAction {
+    
+    
+    // Properties
     var viewTitle: String = ""
     var viewContent: String = ""
-    var cancelButtonLabel: String = ""
     var continueButtonLabel: String = ""
+    var cancelButtonLabel: String = ""
+    
+    
+    
+    //
+    init( viewTitle: String, viewContent: String, continueButtonLabel: String, cancelButtonLabel: String) {
+        self.viewTitle = viewTitle
+        self.viewContent = viewContent
+        self.continueButtonLabel = continueButtonLabel
+        self.cancelButtonLabel = cancelButtonLabel
+    }
+    
 }
 
 

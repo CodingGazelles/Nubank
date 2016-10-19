@@ -3,7 +3,7 @@
 //  Nubank
 //
 //  Created by Tancrède on 10/11/16.
-//  Copyright © 2016 MadeWithMojito. All rights reserved.
+//  Copyright © 2016 MadeWithCaipirinha. All rights reserved.
 //
 
 import UIKit

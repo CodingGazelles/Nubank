@@ -1,9 +1,8 @@
 //
-//  NUError.swift
 //  Nubank
 //
 //  Created by Tancrède on 10/11/16.
-//  Copyright © 2016 MadeWithMojito. All rights reserved.
+//  Copyright © 2016 MadeWithCaipirinha. All rights reserved.
 //
 
 import Foundation
@@ -12,20 +11,37 @@ import Foundation
 
 
 /*
+ Modelization of Errors
  */
-protocol NUError: Error {}
 
 
 
 
 /*
+ Base Nubank Error
  */
-protocol HALError: NUError {}
+protocol NUErrorProtocol: Error, Loggable {}
 
 
-
-/*
- */
-enum HALLinkError: HALError {
-    case GetResourceFailed( message: String?, rootError: Error?)
+class NUResourceError: NUErrorProtocol {
+    var message: String?
+    var rootError: Error?
+    init( message: String?, rootError: Error?){
+        self.message = message
+        self.rootError = rootError
+    }
 }
+
+
+/*
+ Errors thrown from the API
+ */
+
+    
+class LoadingAPIContentFailed: NUResourceError {}
+class ParsingAPIContentFailed: NUResourceError {}
+class NoJsonParserFound: NUResourceError {}
+class ResourceCanEmitUpdateStateAction: NUResourceError {}
+    
+
+

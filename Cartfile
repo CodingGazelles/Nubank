@@ -2,7 +2,9 @@
 #carthage update --platform iOS
 
 #Cartfile
-github "antitypical/Result"
-#github "emaloney/CleanroomLogger"
-github "ReSwift/ReSwift"
-github "Thomvis/BrightFutures"
+github "antitypical/Result" >= 3.0.0
+#github "DaveWoodCom/XCGLogger" ~> 4.0.0
+#github "ReSwift/ReSwift"
+#github "Thomvis/BrightFutures"
+#github "Alamofire/Alamofire"
+

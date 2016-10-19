@@ -1,9 +1,8 @@
 //
-//  NUReducer.swift
 //  Nubank
 //
 //  Created by Tancrède on 10/11/16.
-//  Copyright © 2016 MadeWithMojito. All rights reserved.
+//  Copyright © 2016 MadeWithCaipirinha. All rights reserved.
 //
 
 import Foundation
@@ -26,10 +25,10 @@ class NUReducer: Reducer {
         switch action {
         case let action as NUNoticeUpdateStateAction:
             
-            state.noticeViewState.viewTitleLabel = 
-            
-            
-
+            state.noticeViewState.viewTitleLabel = action.viewTitle
+            state.noticeViewState.viewContent = action.viewContent
+            state.noticeViewState.continueButtonLabel = action.continueButtonLabel
+            state.noticeViewState.cancelButtonLabel = action.cancelButtonLabel
             
         default:
             break
